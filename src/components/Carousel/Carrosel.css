@@ -1,5 +1,29 @@
 img {
   border-radius: 8px 8px;
   display: block;
-  margin: 0px auto;
+  margin: 8px auto 0px;
+
+}
+
+main {
+  padding: 0%;
+  margin: 5%;
+  display: block;
+  min-height: 100vh;
+  min-width: 100vh;
+}
+
+.comment-section {
+  max-height: 25vh;
+  max-width: 90%;
+  background-color: #3f3f3f;
+  overflow-y: scroll;
+}
+
+.comment {
+  height: 10%;
+  padding: 2%;
+  margin: 2%;
+  background-color: #ffff;
+  color: black;
 }

@@ -1,0 +1,16 @@
+.rodape {
+  background: #0b171f;
+  text-align: center;
+  margin-top: 2px;
+  padding: 25px;
+  font-size: 12px;
+  color: #6f8597;
+  letter-spacing: 5px;
+  width: 97.5%;
+  border-radius: 5px;
+
+}
+
+footer {
+  margin-left: 2.5%;
+}
