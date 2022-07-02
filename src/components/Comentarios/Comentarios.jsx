@@ -1,22 +1,38 @@
 import React from "react";
 import './Comentarios.css'
+import { useState } from 'react'
 
 function Comentario(){
+
+function publicarComentario(e){
+  e.preventDefault()
+  setUserName(name)
+}
+
+const [name, setName] = useState()
+const [userName, setUserName] = useState()
+const [text, setText] = useState()
   return(<div>
 
    <div className="tab"> 
-<form action="www.google.com" method="post" className="foorm">
-     <p><label for="nome" >Nome: </label>
-     <input type="text" name="nome" id="nome"/></p>
+<form  className="foorm" >
+     <p><label htmlFor='name'>Nome: </label>
+     <input type="text" name="name" id="name" onChange ={(e) => setName(e.target.value)}/></p>
 
 
      <pre> <p>
-     <textarea name="mensagem" className="mensagem" placeholder="Digite seu comentario..."></textarea></p></pre>
+     <textarea id="coment" name="coment" className="mensagem" placeholder="Digite seu comentario..." onChange={(e) => setText(e.target.value)}></textarea></p></pre>
 
-     <p><input type="submit" id="bt" value="Publicar" class="button-default button-default-stroke"/>
+     <p><input onClick={publicarComentario} type="submit" id="bt" value="Publicar" className="button_default button_default_stroke"/>
       </p>
+     
      </form>
-          </div></div>
+          </div>
+         <div className="comento">
+        {userName &&(  <div className="coment">{name}:
+          {text}
+          </div>)}</div>
+          </div>
   )
 }
 

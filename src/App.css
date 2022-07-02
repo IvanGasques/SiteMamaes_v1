@@ -1,8 +1,7 @@
-body,
-html {
+.App {
   font-family: Arial, sans-serif;
   color: azure;
   margin: auto;
   padding: 0px;
-  background-color: rgb(159, 217, 245);
+  background-color: rgb(159, 217, 246);
 }

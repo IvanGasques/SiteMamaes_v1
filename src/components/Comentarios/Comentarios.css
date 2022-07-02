@@ -19,7 +19,7 @@ textarea {
   border-radius: 8px;
 }
 
-.button-default {
+.button_default {
   background-color: #49bf9d;
   border: 2px solid #49bf9d;
   color: white;
@@ -32,13 +32,13 @@ textarea {
   cursor: pointer;
 }
 
-.button-default-stroke {
-  background-color: white;
+.button_default_stroke {
+  background-color: rgb(31, 31, 156);
   border-color: #efefef;
   color: inherit;
 }
 
-.button-default-stroke:hover {
+.button_default_stroke:hover {
   color: #49bf9d;
   border-color: #49bf9d;
 }
@@ -46,4 +46,14 @@ textarea {
 .button-default:hover {
   color: #49bf9d;
   border-color: #49bf9d;
+}
+
+.coment {
+  background-color: rgb(226, 226, 233);
+  width: 95%;
+  height: 5rem;
+  padding: 15px 13px 1px 20px;
+  border-radius: 10px;
+  display: block;
+  margin: 17px auto;
 }
