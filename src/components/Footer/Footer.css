@@ -1,6 +1,8 @@
 .rodape {
   background: #0b171f;
   text-align: center;
+  justify-content: center;
+  align-items: center;
   margin: 10px 0 3px 0;
   padding: 25px;
   font-size: 12px;
@@ -14,4 +16,21 @@
 
 footer {
   margin-left: 2.5%;
+}
+
+.social_list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding-right: 3em;
+}
+
+.social_list li {
+  margin: 0 1em;
+}
+
+.social_list svg {
+  font-size: 2em;
+  cursor: pointer;
 }

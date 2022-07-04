@@ -1,4 +1,9 @@
 .container-fluid {
- background-color:rgb(2, 163, 244);
- color: black;
+  background-color: rgb(2, 163, 244);
+  color: black;
+}
+
+.link {
+  height: 60px;
+  width: 100%;
 }
