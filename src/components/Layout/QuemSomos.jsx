@@ -1,6 +1,8 @@
+import './QuemSomos.css'
+
 function QuemSomos(){
-  return (
-<h1>QuemSomos</h1>
+  return (<div className="body">
+<h1 >QuemSomos</h1></div>
   )
 }
 export default QuemSomos

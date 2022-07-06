@@ -10,9 +10,3 @@ body #root {
   background-color: aliceblue;
   height: 100%;
 }
-
-.App {
-  min-height: 720px;
-
-  background-color: bisque;
-}

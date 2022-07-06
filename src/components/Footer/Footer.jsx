@@ -9,7 +9,7 @@ function Footer () {
      <li><FaFacebook></FaFacebook></li>
      <li><FaInstagram></FaInstagram></li>
      <li><FaLinkedin></FaLinkedin></li>
-     </ul> &copy;SiteMamaes.com</div></footer>
+     </ul> <span>&copy;<span className="copy">SiteMamaes</span></span></div></footer>
   )
 }
 

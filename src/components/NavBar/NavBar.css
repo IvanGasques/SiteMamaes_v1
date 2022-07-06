@@ -1,4 +1,29 @@
-nav {
-  width: 100%;
-  background-color: aqua;
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #0b171f;
+  flex-direction: row-reverse;
+
+}
+
+.list {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  padding: 13px 0 0 0;
+}
+
+.item {
+  margin-right: 2em;
+
+
+}
+
+.item a {
+  color: rgb(254, 254, 254);
+  text-decoration: none;
+}
+
+.item a:hover {
+  color: rgb(146, 205, 190)
 }

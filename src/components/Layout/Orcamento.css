@@ -1,0 +1,31 @@
+.container {
+  width: 100%;
+  height: 522px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4em;
+  margin: 30px auto 15px;
+}
+
+.container h1 {
+  font-size: 2.5em;
+  margin-bottom: .5em;
+}
+
+.container h1 span {
+  color: rgb(146, 205, 190);
+  padding: 0 .2em;
+  background-color: #0b171f;
+}
+
+.container h3 {
+  margin-bottom: 1.5em;
+  color: #7b7b7b;
+}
+
+.container img {
+  width: 450px;
+  margin: 2em 0;
+}
