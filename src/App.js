@@ -4,14 +4,13 @@ import './App.css'
 import './index.css'
 import Footer from './components/Footer/Footer.jsx'
 import {BrowserRouter as Router, Route,Switch,} from 'react-router-dom'
-import Project from './components/Layout/Project'
 import QuemSomos from './components/Layout/QuemSomos'
 import Contacto from './components/Layout/Contacto'
-import Orcamento from './components/Layout/Orcamento'
 import NavBar from "./components/NavBar/Navbar";
-import Pagina from './components/Pagina'
 
-
+import ProjectV from './components/Layout/projectV'
+import Home from './components/Layout/Home'
+import Home2 from './components/Projecto/Home2'
 function App() {
 
 
@@ -19,15 +18,16 @@ function App() {
   <div className='App'>
   <div className='link'> <Router>
   <NavBar></NavBar>
+ 
   
 
  <Switch >
- 
-    <Route exact path='/Home'>
-      <Pagina></Pagina>
+
+    <Route exact path='/'>
+      <Home/>
       </Route>
       <Route exact path='/Project' >
-    <Project></Project>
+    <ProjectV/>
     </Route>
     <Route exact path='/QuemSomos' >
     <QuemSomos></QuemSomos>
@@ -35,8 +35,8 @@ function App() {
     <Route exact path='/Contacto'>
     <Contacto></Contacto>
     </Route>
-    <Route exact path='/Orcamento'>
-    <Orcamento></Orcamento>
+    <Route exact path='/Planeamento'>
+    <Home2/>
     </Route>
     
     </Switch> </Router></div>

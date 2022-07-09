@@ -1,12 +1,14 @@
-.btn {
+.submite {
   background-color: #0b171f;
   color: rgb(254, 254, 254);
   padding: 0.5em 1em;
   text-decoration: none;
   transition: o.5s;
-
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
 }
 
-.btn:hover {
+.submite:hover {
   color: rgb(146, 205, 190)
 }

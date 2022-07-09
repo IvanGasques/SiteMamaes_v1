@@ -1,0 +1,15 @@
+.selecte {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+
+.selecte label {
+  margin-bottom: .6em;
+  font-weight: bold;
+}
+
+.selecte select {
+  padding: .7em;
+  border: none;
+}
