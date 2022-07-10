@@ -1,6 +1,6 @@
 import './Home.css'
 import img5 from '../img/img5.jpg'
-import LinkBtn from './LinkBtn'
+import LinkBtn from '../Form/LinkBtn'
 
 
 function Home(){

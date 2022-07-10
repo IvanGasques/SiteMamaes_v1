@@ -7,10 +7,9 @@ import {BrowserRouter as Router, Route,Switch,} from 'react-router-dom'
 import QuemSomos from './components/Layout/QuemSomos'
 import Contacto from './components/Layout/Contacto'
 import NavBar from "./components/NavBar/Navbar";
-
-import ProjectV from './components/Layout/projectV'
 import Home from './components/Layout/Home'
 import Home2 from './components/Projecto/Home2'
+import Projects from './components/Layout/Projects'
 function App() {
 
 
@@ -26,8 +25,8 @@ function App() {
     <Route exact path='/'>
       <Home/>
       </Route>
-      <Route exact path='/Project' >
-    <ProjectV/>
+      <Route exact path='/Projects' >
+    <Projects/>
     </Route>
     <Route exact path='/QuemSomos' >
     <QuemSomos></QuemSomos>

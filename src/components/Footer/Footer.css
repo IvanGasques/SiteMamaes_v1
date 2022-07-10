@@ -1,7 +1,6 @@
 .rodape {
   background: #0b171f;
   text-align: center;
-  justify-content: center;
   align-items: center;
   margin: 7px 0 3px 0;
   padding: 15px;
@@ -9,8 +8,7 @@
   color: #6f8597;
   letter-spacing: 5px;
   width: 100%;
-  display: block;
-
+  display: ruby-base;
 }
 
 footer {
