@@ -10,6 +10,8 @@ import NavBar from "./components/NavBar/Navbar";
 import Home from './components/Layout/Home'
 import Home2 from './components/Projecto/Home2'
 import Projects from './components/Layout/Projects'
+import EditProj from './components/Projecto/EditProj'
+
 function App() {
 
 
@@ -25,17 +27,20 @@ function App() {
     <Route exact path='/'>
       <Home/>
       </Route>
-      <Route exact path='/Projects' >
+      <Route  path='/Projects' >
     <Projects/>
     </Route>
-    <Route exact path='/QuemSomos' >
+    <Route  path='/QuemSomos' >
     <QuemSomos></QuemSomos>
     </Route>
-    <Route exact path='/Contacto'>
+    <Route  path='/Contacto'>
     <Contacto></Contacto>
     </Route>
-    <Route exact path='/Planeamento'>
+    <Route  path='/Planeamento'>
     <Home2/>
+    </Route>
+    <Route  path='/project/:id' >
+    <EditProj></EditProj>
     </Route>
     
     </Switch> </Router></div>

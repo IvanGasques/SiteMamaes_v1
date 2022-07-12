@@ -5,20 +5,25 @@ import Container from '../NavBar/Container'
 import LinkBtn from "../Form/LinkBtn"
 import CardProject from "../Projecto/CardProject/CardProject"
 import { useEffect, useState } from "react"
+import Loading from "../Projecto/Loading./Loading"
 
 
 const Projects = ({type, start}) => {
 
   const[projects, setProjects] = useState([])
+  const [removeLoading, setRemoveLoading] = useState(false)
+  const [projectMessage, setProjectMessage] = useState('')
+
 
   const location = useLocation()
   let message =''
   if (location.state){
     message =  location.state.message
   }
+///////////////////////////////////////////////////////////
 
   useEffect (()=> {
-    fetch('http://localhost:5000/projects',{
+    setTimeout(() => {fetch('http://localhost:5000/projects',{
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
@@ -27,8 +32,32 @@ const Projects = ({type, start}) => {
   .then((resp) => resp.json())
   .then((data) => {
     setProjects(data)
+    setRemoveLoading(true)
+   
+
   })
-  .catch((err) => console.log(err))},[])
+  .catch((err) => console.log(err))
+},800)},[])
+
+///////////////////////////////////////////////////////////
+
+const removeProject = (id) => {
+
+  fetch (`http://localhost:5000/projects/${id}`, {
+    method: 'DELETE',
+    headers: {
+      'Contente-Type': 'application/json'
+    },
+  }).then((resp) => resp.json())
+  .then((data => {
+    setProjects(projects.filter((project) => project.id!== id))
+    setProjectMessage('Projeto removido com sucesso')
+  }))
+  
+  .catch(err => console.log(err))
+}
+///////////////////////////////////////////////////////////
+
   return(
     <div className="project_container">
      <div className="title">
@@ -37,16 +66,23 @@ const Projects = ({type, start}) => {
      </div>
     {message && 
     <Message type='success' msg={message}/>}
+    <Message type='success' msg={projectMessage}/>
     <Container className={start}>
-     {projects.length> 0 &&
-     projects.map((projects) =>
+     {projects.length >0 &&
+     projects.map((projects, category) =>
       <CardProject 
       id= {projects.id}
       name={projects.name}
       budget={projects.budget}
-      category={projects.category.name}
+      category={category.name ? (category.name) : ('')}
       key={projects.id}
+      handleRemove={removeProject}
       />
+     )}
+     {!removeLoading && <Loading/>}
+
+     {removeLoading && projects.length ===0 && (
+      <p> Não hà projeto cadastrados</p>
      )}
     </Container>
 

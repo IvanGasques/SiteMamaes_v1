@@ -1,6 +1,7 @@
 .project_container {
   padding: 2em;
   height: 100%;
+  min-height: 36.15em;
 }
 
 .title {

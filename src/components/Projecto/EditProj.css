@@ -1,0 +1,71 @@
+.btne {
+  height: 50px;
+  width: 160px;
+}
+
+.btne {
+  background-color: #0b171f;
+  color: rgb(254, 254, 254);
+  padding: 0.5em 1em;
+  text-decoration: none;
+  transition: 0.5s;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  margin-top: 1em;
+}
+
+.btne:hover {
+  color: rgb(146, 205, 190)
+}
+
+.edit h1,
+.edit h2,
+.edit p {
+  margin-bottom: 0.5em;
+}
+
+.edit h1 {
+  background-color: #222;
+  color: azure;
+  padding: 0.4em;
+  min-width: 7.5em;
+  max-width: 13em;
+  text-align: center;
+  border-radius: 6px;
+  margin-bottom: 0.8em;
+
+}
+
+.edit span {
+  font-weight: bold;
+}
+
+.edit,
+.edit2 {
+  border-radius: 1px solid #7a7a7a;
+  margin-bottom: 1.2em;
+  padding-bottom: 1.0em;
+  justify-content: space-between;
+  width: 24em;
+}
+
+.edit {
+  padding: 2em;
+}
+
+.cont {
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 0.5em;
+
+}
+
+.loader {
+  margin-top: 4em;
+}
+
+.edite {
+  width: 100%;
+  min-height: 36.3em;
+}

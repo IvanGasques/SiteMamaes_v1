@@ -1,9 +1,11 @@
 import './Loading.css'
-import {BiLoaderC
+import loading from './loading.svg'
 
 const Loading = () => {
   return(
-    <div className='loader'></div>
+    <div className='loader'> 
+    <img src={loading} className='image' alt='Loading'/> 
+    </div>
   )
 }
 export default Loading
