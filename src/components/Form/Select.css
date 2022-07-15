@@ -6,11 +6,13 @@
 
 .selecte label {
   margin-bottom: .6em;
+  color: #4c4d4c;
   font-weight: bold;
 }
 
 .selecte select {
   padding: .7em;
-  border: 1px solid black;
+  border: 1px solid #f2eadf;
   border-radius: 5px;
+  color: #dfdee4
 }

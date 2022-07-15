@@ -7,14 +7,16 @@
 .control label {
   margin-bottom: .6em;
   font-weight: bold;
+  color: #4c4d4c;
 }
 
 .control input {
   padding: .7em;
-  border: 1px solid black;
+  border: 1px solid #f2eadf;
   border-radius: 5px;
 }
 
 .control input::placeholder {
-  color: #7b7b7b;
+  color: #D7D9E9;
+
 }

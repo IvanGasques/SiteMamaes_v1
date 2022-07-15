@@ -13,5 +13,17 @@
 }
 
 .card-text {
-  color: black;
+  color: #6d6e6e;
+
+}
+
+
+
+.btn-outline- {
+  color: #D7D9E9;
+}
+
+.card:a {
+  color: #F2EADF;
+
 }

@@ -3,6 +3,7 @@
 import { useState, } from 'react'
 import Input from '../../Form/Input'
 import Submit from '../../Form/Submit'
+import '../EditProj.css'
 
 
 const ServiceForm = ({handleSubmit, btxText, projectData}) => {
@@ -19,7 +20,7 @@ const handleChange  = (e) =>{
 setService({...service,[e.target.name]: e.target.value})
 }
   return(
-  <form onSubmit={submit } >
+  <form onSubmit={submit } className='form'>
     <Input 
     type='text'
     text="Nome do serviço"

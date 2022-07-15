@@ -2,29 +2,68 @@
   "projects": [
     {
       "name": "Gravida",
-      "budget": "2000",
+      "budget": "201",
       "category": {
-        "id": "6",
-        "name": "Consultas"
+        "id": "1",
+        "name": "Roupas e acessorios"
+      },
+      "mamaes": 0,
+      "services": [
+        {
+          "name": "cewrv",
+          "cost": "19",
+          "description": " s f",
+          "id": "39bc51ee-9eb3-4b87-ae58-92eee11581ae"
+        },
+        {
+          "name": "s",
+          "description": "2",
+          "cost": "2",
+          "id": "e2cbe317-f679-47b1-a9cb-4bf02b35e188"
+        },
+        {
+          "name": "s",
+          "description": "2",
+          "cost": "2",
+          "id": "e2cbe317-f679-47b1-a9cb-4bf02b35e188"
+        },
+        {
+          "name": "s",
+          "description": "2",
+          "cost": "2",
+          "id": "e2cbe317-f679-47b1-a9cb-4bf02b35e188"
+        },
+        {
+          "name": "s",
+          "description": "2",
+          "cost": "2",
+          "id": "e2cbe317-f679-47b1-a9cb-4bf02b35e188"
+        }
+      ],
+      "id": 2,
+      "cost": null
+    },
+    {
+      "name": "novo",
+      "budget": "123",
+      "mamaes": 0,
+      "services": [],
+      "id": 3
+    },
+    {
+      "name": "ivan",
+      "budget": "123",
+      "category": {
+        "id": "1",
+        "name": "Roupas e acessorios"
       },
       "mamaes": 0,
       "services": [],
-      "id": 1
+      "id": 4
     },
     {
-      "name": "Gravida",
-      "budget": "2000",
-      "category": {
-        "id": "6",
-        "name": "Consultas"
-      },
-      "mamaes": 0,
-      "services": [],
-      "id": 2
-    },
-    {
-      "name": "Ivan",
-      "budget": "2314",
+      "name": "sc",
+      "budget": "2134",
       "category": {
         "id": "1",
         "name": "Roupas e acessorios"
@@ -34,104 +73,28 @@
       "id": 5
     },
     {
-      "name": "Materiais",
-      "budget": "1200",
-      "category": {
-        "id": "5",
-        "name": "Estrutura"
-      },
+      "name": "sdfg",
+      "budget": "234",
       "mamaes": 0,
       "services": [],
       "id": 6
     },
     {
-      "name": "Novo",
-      "budget": "1234",
+      "name": "dfvbg",
+      "budget": "23",
       "category": {
-        "id": "7",
-        "name": "Revelacao"
+        "id": "1",
+        "name": "Roupas e acessorios"
       },
       "mamaes": 0,
       "services": [],
-      "id": 8
-    },
-    {
-      "name": "Meu",
-      "budget": "122",
-      "category": {
-        "id": "2",
-        "name": "Quarto do bebe"
-      },
-      "mamaes": 0,
-      "services": [],
-      "id": 12
-    },
-    {
-      "name": "Fraldas",
-      "budget": "100",
-      "category": {
-        "id": "9",
-        "name": "Necessidades(Bebe)"
-      },
-      "mamaes": 0,
-      "services": [],
-      "id": 14
-    },
-    {
-      "name": "teste",
-      "budget": "56",
-      "category": {
-        "id": "3",
-        "name": "Cha de bebe"
-      },
-      "mamaes": 0,
-      "services": [],
-      "id": 15
-    },
-    {
-      "name": "Troca",
-      "budget": "5432131",
-      "category": {
-        "id": "7",
-        "name": "Revelacao"
-      },
-      "mamaes": 0,
-      "services": [],
-      "id": 16
+      "id": 7
     }
   ],
   "categories": [
     {
       "id": 1,
       "name": "Roupas e acessorios"
-    },
-    {
-      "id": 2,
-      "name": "Quarto do bebe"
-    },
-    {
-      "id": 3,
-      "name": "Cha de bebe"
-    },
-    {
-      "id": 5,
-      "name": "Estrutura"
-    },
-    {
-      "id": 6,
-      "name": "Consultas"
-    },
-    {
-      "id": 7,
-      "name": "Revelacao"
-    },
-    {
-      "id": 8,
-      "name": "Necessidades(Mamae)"
-    },
-    {
-      "id": 9,
-      "name": "Necessidades(Bebe)"
     }
   ]
 }

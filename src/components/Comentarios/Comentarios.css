@@ -1,11 +1,20 @@
 .foorm {
-  background-color: rgb(226, 226, 233);
+  background-color: white;
+  color: #F2EADF;
+
   width: 95%;
   height: 260px;
   padding: 15px 13px 1px 20px;
   border-radius: 10px;
   display: block;
   margin: 17px auto;
+  border: 1px solid #d9af8b;
+
+}
+
+input {
+  border: 1px solid #d9af8b;
+
 }
 
 textarea {
@@ -13,6 +22,9 @@ textarea {
   text-decoration: none;
   height: 90px;
   border-radius: 10px;
+  border: 1px solid #d9af8b;
+  text-transform: none;
+
 }
 
 #nome {
@@ -20,8 +32,8 @@ textarea {
 }
 
 .button_default {
-  background-color: #49bf9d;
-  border: 2px solid #49bf9d;
+  background-color: #d9af8b;
+  border: 1px solid #f2eadf;
   color: white;
   padding: 0.75em 1.5em;
   border-radius: 5px;
@@ -33,23 +45,24 @@ textarea {
 }
 
 .button_default_stroke {
-  background-color: rgb(31, 31, 156);
+  background-color: #d9af8b;
   border-color: #efefef;
-  color: inherit;
+  color: #F2EADF;
+
 }
 
 .button_default_stroke:hover {
-  color: #49bf9d;
-  border-color: #49bf9d;
+  color: #D7D9E9;
+
 }
 
 .button-default:hover {
-  color: #49bf9d;
-  border-color: #49bf9d;
+  color: #D7D9E9;
+
+
 }
 
 .coment {
-  background-color: rgb(226, 226, 233);
   width: 95%;
   height: 5rem;
   padding: 15px 13px 1px 20px;

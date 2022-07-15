@@ -1,4 +1,5 @@
 import './EditProj.css'
+import './CardProject/CardProject.css'
 import {useParams} from 'react-router-dom'
 import Loading from './Loading./Loading'
 import { useEffect, useState } from 'react'
@@ -7,12 +8,15 @@ import Message from './Menssage/Menssage'
 import ServiceForm from './ServiceForm/ServiceForm'
 import {parse, v4 as uuidv4} from 'uuid'
 
+import ServiceCard from './ServiceForm/ServiceCard'
+
 const EditProj = () =>{
 const {id} = useParams()
 
 const [project, setproject] = useState([]) 
 const [showProject, setShowProject] = useState(false)
 const [showService, setShowService] = useState(false)
+const [services, setServices] = useState([])
 
 
 const [message, setMessage] = useState()
@@ -29,6 +33,7 @@ headers: {
  }).then((resp) => resp.json())
  .then((data) => {
   setproject(data)
+  setServices(data.services)
  })
 .catch((err) => console.log(err))},800)
 },[id])
@@ -47,9 +52,10 @@ const service = () => {
   setShowService(!showService)
 }
 ///////////////////////////////////////////////////////////
-const createService = () => {
+const createService = (project) => {
 
-}
+setMessage('')
+
 const lastService = project.services[project.services.length - 1]
  
 lastService.id = uuidv4() //net
@@ -70,20 +76,19 @@ project.cost = newCost
 
 //atualizar
 
-fetch(`http://localhost:5000/projetcs/${projetc.id}`, {
+fetch(`http://localhost:5000/projects/${project.id}`, {
   method: 'PATCH',
   headers: {
     'Content-Type': 'application/json',
   },
-  body: JSON,stringify(project)
-})
+  body: JSON.stringify(project)
+ })
 .then((resp) => resp.json())
 .then((data) => {
-  //exibir os servicos
-console.log(data)
+ setShowProject(false)
 }) 
 .catch((err) => console.log(err))
-
+}
 ///////////////////////////////////////////////////////////
 
 
@@ -113,6 +118,11 @@ const editProj = (project) =>{
 }
 ///////////////////////////////////////////////////////////
 
+const serviceRemove= () => {
+  
+}
+
+////////////////////////////////////////////////////////////
   return (
     <div className='edite'>
       {project.name ? (
@@ -120,7 +130,7 @@ const editProj = (project) =>{
   {message && <Message type={type} msg={message}/>}
 
     <h1>Projecto:{project.name}</h1>
-    
+    <button onClick={edit} className='btne'>{!showProject ?  'Editar Projecto' : 'Fechar'}  </button>
 
 
     {!showProject ? ( 
@@ -140,23 +150,40 @@ const editProj = (project) =>{
         <div className='edit2'>
           <Planeamento  handleSubmit={editProj} btxText='Concluir edição' projectData={project}/>
         </div>
-      )}<button onClick={edit} className='btne'>{!showProject ?  'Editar Projecto' : 'Fechar'}  </button>
+      )}
       
 <div className='edit2'>
 <h2>Adicione serviço</h2>
 <button onClick={service} className='btne'>{!showService ?  'Adicionar gasto' : 'Fechar'}  </button>
 <div className='service_info'>
-{showService && (
-  <ServiceForm/>
-)}
+
+{showService && <ServiceForm
+handleSubmit={createService} 
+btxText= 'Adicionar Serviço'
+projectData={project}/>
+}
 </div>
 </div>
-<div>
+
   <h2> Serviços</h2>
   <span className='start'> 
-  <p>Itens de serviços</p>
+
+  
+  {services.length > 0 &&
+  services.map((service) =>(
+    <ServiceCard 
+    id= {service.id}
+    name= {service.name}
+    cost= {service.cost}
+    description= {service.description}
+    key= {service.id}
+    handleRemove= {serviceRemove}
+    
+  />))
+  }
+  {services.length === 0 && <p>Não ha serviços cadastrados</p>}
   </span>
-</div>
+
       
   
 <div className='service_info'> 

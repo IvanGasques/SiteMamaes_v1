@@ -15,14 +15,13 @@
 }
 
 .container h1 span {
-  color: rgb(146, 205, 190);
+  color: #4c4d4c;
   padding: 0 .2em;
-  background-color: #0b171f;
 }
 
 .container h3 {
   margin-bottom: 1.5em;
-  color: #7b7b7b;
+  color: #6d6e6e;
 }
 
 .container img {

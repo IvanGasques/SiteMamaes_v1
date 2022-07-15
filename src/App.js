@@ -11,13 +11,16 @@ import Home from './components/Layout/Home'
 import Home2 from './components/Projecto/Home2'
 import Projects from './components/Layout/Projects'
 import EditProj from './components/Projecto/EditProj'
+import imageUrl from './components/img/backgraund.jpg'
 
 function App() {
 
 
   return (
-  <div className='App'>
+    
+  <div className='App' style={{ background: `url(${imageUrl})`}}>
   <div className='link'> <Router>
+ 
   <NavBar></NavBar>
  
   
@@ -44,6 +47,7 @@ function App() {
     </Route>
     
     </Switch> </Router></div>
+   
 <Footer className='footer'></Footer>
   </div>
   )

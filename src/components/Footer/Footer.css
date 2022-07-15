@@ -1,11 +1,11 @@
 .rodape {
-  background: #0b171f;
+  background: #BF7256;
   text-align: center;
   align-items: center;
   margin: 7px 0 3px 0;
   padding: 15px;
   font-size: 12px;
-  color: #6f8597;
+  color: #F2EADF;
   letter-spacing: 5px;
   width: 100%;
   display: ruby-base;
@@ -29,15 +29,16 @@ footer {
 }
 
 .social_list svg {
-  font-size: 1.5em;
+  font-size: 2em;
   cursor: pointer;
 }
 
 .social_list li:hover {
-  color: rgb(146, 205, 190)
+  color: #D7D9E9;
+
 }
 
 .copy {
   font-weight: bold;
-  color: rgb(146, 205, 190)
+  color: #D7D9E9;
 }

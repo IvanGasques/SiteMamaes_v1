@@ -74,7 +74,7 @@ const removeProject = (id) => {
       id= {projects.id}
       name={projects.name}
       budget={projects.budget}
-      category={category.name ? (category.name) : ('')}
+      category={category.name}
       key={projects.id}
       handleRemove={removeProject}
       />

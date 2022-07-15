@@ -1,6 +1,6 @@
 .submite {
-  background-color: #0b171f;
-  color: rgb(254, 254, 254);
+  background-color: #d9af8b;
+  color: #F2EADF;
   padding: 0.5em 1em;
   text-decoration: none;
   transition: 0.5s;
@@ -10,5 +10,5 @@
 }
 
 .submite:hover {
-  color: rgb(146, 205, 190)
+  color: #D7D9E9;
 }

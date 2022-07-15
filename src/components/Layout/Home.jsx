@@ -1,16 +1,21 @@
 import './Home.css'
-import img5 from '../img/img5.jpg'
 import LinkBtn from '../Form/LinkBtn'
-
+import Carrosel from '../Carousel/Carrosel'
+import Card from '../Card/Card'
+import Comentario from '../Comentarios/Comentarios'
 
 function Home(){
-  return (
+  return (<div>
     <section className="container">
-<h1>Bem-Vindo ao <span>Site das mamaes</span></h1>
-<h3> Faça seu planeamento neste momentao tão IMPORTANTE!</h3>
+<h1><span className='color'>Bem-Vindo ao </span><span>Site das mamãs</span></h1>
+<Carrosel/>
+<h3> Faça seu planeamento neste momento tão IMPORTANTE!</h3>
 <LinkBtn to='/Planeamento' text='Criar Planeamento'/>
-<img src={img5} alt='mamaes'></img>
 
-  </section>)
+  </section>
+  <Card/>
+  <Comentario/>
+  
+  </div>)
 }
 export default Home

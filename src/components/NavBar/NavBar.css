@@ -1,7 +1,7 @@
 .navBar {
   display: flex;
   justify-content: space-between;
-  background-color: #0b171f;
+  background-color: #BF7256;
   flex-direction: row-reverse;
 
 }
@@ -20,10 +20,10 @@
 }
 
 .item a {
-  color: rgb(254, 254, 254);
+  color: #F2EADF;
   text-decoration: none;
 }
 
 .item a:hover {
-  color: rgb(146, 205, 190)
+  color: #D7D9E9;
 }

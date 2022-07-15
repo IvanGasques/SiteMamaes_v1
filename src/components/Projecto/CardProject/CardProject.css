@@ -1,15 +1,17 @@
 .project_card {
   padding: 1em;
-  border: 1px solid #7a7a7a;
+  border: 1px solid #f2eadf;
   border-radius: 5px;
   width: 24%;
   margin: 0.5%;
   flex-wrap: wrap;
+  color: #6d6e6e;
+
 
 }
 
 .project_card h4 {
-  background-color: #222;
+  background-color: #d9af8b;
   color: rgb(254, 254, 254);
   padding: .4em;
   margin-bottom: 1.3em;
@@ -24,6 +26,7 @@
 
 .category_text {
   display: flex;
+  color: #6d6e6e;
   align-items: center;
 }
 
@@ -53,13 +56,13 @@ li {
 .card_actions button {
   text-decoration: none;
   border: none;
-  background-color: #BF7256;
-  color: #F2D9D4;
+  background-color: #d9af8b;
+  color: #D7D9E9;
   font-size: .9em;
   padding: .6em 1em;
   margin-right: 1em;
   cursor: pointer;
-  border: 1px solid black;
+  border: 1px solid #f2eadf;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -69,8 +72,8 @@ li {
 }
 
 .card_actions button:hover {
-  background-color: #e08b6b;
-  color: rgb(218, 178, 178);
+  color: #F2EADF;
+
 }
 
 svg {

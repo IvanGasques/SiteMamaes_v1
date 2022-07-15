@@ -16,6 +16,7 @@ const [text, setText] = useState()
 
    <div className="tab"> 
 <form  className="foorm" >
+<h1> Partilha de experiências</h1>
      <p><label htmlFor='name'>Nome: </label>
      <input type="text" name="name" id="name" onChange ={(e) => setName(e.target.value)}/></p>
 
