@@ -45,7 +45,7 @@ body: JSON.stringify(data)
 
 
      <pre> <p>
-     <input  name='content'  type='text' value={post} className="textarea" placeholder="Digite a sua experiências..." onChange={postChange} required></input></p></pre>
+     <input  name='content'  type='text' value={post} className="textarea" placeholder="Digite aqui as suas experiências..." onChange={postChange} required></input></p></pre>
 
      <p className="bt" >
      <button  type="submit"  onClick={() => window.location.reload()} className="button_default button_default_stroke">Publicar</button>

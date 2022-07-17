@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Indie+Flower&display=swap");
+
+
 .btne {
   height: 50px;
   width: 160px;
@@ -27,7 +30,7 @@
 
 .edit h1 {
 
-
+  font-size: 26px;
 
   color: #4c4d4c;
 
@@ -44,25 +47,21 @@
   font-weight: bold;
 }
 
-.edit,
-.edit2 {
-  border-radius: 1px solid #7a7a7a;
-  margin-bottom: 1.2em;
-  padding-bottom: 1.0em;
-  justify-content: space-between;
-  width: 24em;
+p {
+
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Indie Flower', cursive;
 }
 
+
+
 .edit {
+  flex-wrap: wrap;
   padding: 2em;
 }
 
-.cont {
-  flex-direction: column;
-  justify-content: flex-start;
-  margin-bottom: 0.5em;
 
-}
+
 
 .loader {
   margin-top: 4em;
@@ -71,4 +70,19 @@
 .edite {
   width: 100%;
   min-height: 36.3em;
+  flex-wrap: wrap;
+}
+
+.start,
+.service_info,
+.project_card {
+  flex-wrap: wrap;
+  display: flex;
+  min-height: 200px;
+
+}
+
+.project_card {
+  background-color: rgba(252, 255, 255, 0.903);
+
 }

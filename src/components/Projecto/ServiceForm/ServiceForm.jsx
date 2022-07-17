@@ -1,9 +1,8 @@
+import '../CardProject/CardProject.css'
 
-
-import { useState, } from 'react'
+import { useState } from 'react'
 import Input from '../../Form/Input'
 import Submit from '../../Form/Submit'
-import '../EditProj.css'
 
 
 const ServiceForm = ({handleSubmit, btxText, projectData}) => {

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Indie+Flower&display=swap");
+
 .page {
   width: 95%;
   display: center;
@@ -14,6 +16,18 @@
   font-weight: bold;
   font-size: 1.6em;
   padding-top: 16px;
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Indie Flower', cursive;
+}
+
+.mens {
+  padding-bottom: 9px;
+}
+
+p,
+h4 {
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Indie Flower', cursive;
 }
 
 .post {

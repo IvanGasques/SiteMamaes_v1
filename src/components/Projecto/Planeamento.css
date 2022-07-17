@@ -1,6 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Indie+Flower&display=swap");
+
+p {
+
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Indie Flower', cursive;
+}
+
 .plane {
   width: 100%;
   margin: 2em 0;
+  font-size: 20px;
 }
 
 h1 {

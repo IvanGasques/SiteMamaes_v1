@@ -14,7 +14,7 @@ const remove = (e) => {
   return(<div className='project_card'>
    <h4>{name}</h4>
    <p>
-   <span>Orcamento: </span> €{budget}</p>
+   <span className='pa' >Orcamento: </span> €{budget}</p>
    <p>
     <span></span><li>{category}</li>
    </p>

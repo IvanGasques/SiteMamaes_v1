@@ -52,6 +52,8 @@ const service = () => {
   setShowService(!showService)
 }
 ///////////////////////////////////////////////////////////
+
+
 const createService = (project) => {
 
 setMessage('')
@@ -94,7 +96,7 @@ fetch(`http://localhost:5000/projects/${project.id}`, {
 
 const editProj = (project) =>{
   setMessage('')
-  if (project.budget <  project.cost){
+  if (project.budget <  project.services.cost){
     setMessage('O orçamento não pode ser menor que o custo do projeto')
     setType('error')
     return false
@@ -109,7 +111,7 @@ const editProj = (project) =>{
   .then((resp => resp.json()))
   .then((data) => {
     setproject(data)
-    setShowProject(false)
+    setShowService(false)
     setMessage('Projeto atualizado!')
     setType('success')
    
@@ -118,14 +120,36 @@ const editProj = (project) =>{
 }
 ///////////////////////////////////////////////////////////
 
-const serviceRemove= () => {
+const serviceRemove= ({id, cost}) => {
+
+  const servicesUpdated = project.services.filter((service) => service.id !== id)
+
+  const projectUpdated = project
+
+  projectUpdated.services = servicesUpdated
+
+  projectUpdated.cost = parseFloat(projectUpdated.id) - parseFloat(cost)
+
+  fetch(`http://localhost:5000/projects/${project.id}`,{
+    method: 'PATCH',
+    headers: {
+      'Content-Type':'application/json'
+    },
+    body: JSON.stringify(projectUpdated)
+  }).then((resp => resp.json()))
+  .then((data) => {
+   setproject(projectUpdated)
+   setServices(servicesUpdated)
+   setMessage('Serviço removido com sucesso!')
+  })
+  .catch(err=> console.log(err))
   
 }
 
 ////////////////////////////////////////////////////////////
-  return (
+  return (<div>
     <div className='edite'>
-      {project.name ? (
+      {project ? (
 <div className='edit'>
   {message && <Message type={type} msg={message}/>}
 
@@ -135,7 +159,7 @@ const serviceRemove= () => {
 
     {!showProject ? ( 
       <div  className='cont' ><p>
-      <span>Categoria:</span> {project.category.name}
+      <span>Categoria:</span> {project.category}
       </p>
 
       <p>
@@ -143,7 +167,7 @@ const serviceRemove= () => {
       </p>
 
       <p>
-      <span>Total utilizado:</span> €{project.cost}
+      <span>Total utilizado:</span> €{project.services}
       </p> 
       </div>) 
       : (
@@ -157,32 +181,30 @@ const serviceRemove= () => {
 <button onClick={service} className='btne'>{!showService ?  'Adicionar gasto' : 'Fechar'}  </button>
 <div className='service_info'>
 
-{showService && <ServiceForm
+{!showService ? <ServiceForm
 handleSubmit={createService} 
 btxText= 'Adicionar Serviço'
-projectData={project}/>
+projectData={project}/> : false
 }
 </div>
 </div>
 
   <h2> Serviços</h2>
-  <span className='start'> 
+  <div className='start'> 
 
   
   {services.length > 0 &&
   services.map((service) =>(
-    <ServiceCard 
+    <ServiceCard className='project_card'
     id= {service.id}
     name= {service.name}
     cost= {service.cost}
     description= {service.description}
     key= {service.id}
-    handleRemove= {serviceRemove}
-    
-  />))
-  }
-  {services.length === 0 && <p>Não ha serviços cadastrados</p>}
-  </span>
+    handleRemove= {serviceRemove} />))}
+    {services.length === 0 && <p>Não hà serviços cadastrados.</p>}
+ 
+  </div>
 
       
   
@@ -196,7 +218,7 @@ projectData={project}/>
   
 </div>
       ) : ( <Loading className='loader'/>)}
-    </div>
+    </div></div>
   )
 }
 

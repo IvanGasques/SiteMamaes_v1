@@ -1,10 +1,10 @@
 import './Home2.css'
 import Planeamento from './Planeamento'
-import {useHistory} from 'react-router-dom'
+import {useNavigate, } from 'react-router-dom'
 
 
  const Home2 = () => {
-  const history = useHistory ()
+  const navegate = useNavigate ()
 const createPost = (project) => {
   project.mamaes = 0
 project.services = []
@@ -19,7 +19,7 @@ fetch('http://localhost:5000/projects', {
 .then((resp) => resp.json())
 .then((data) => {
   console.log(data)
-  history.push('/projects',{message: 'Projeto criado com sucesso!'})
+  navegate('/projects',{message: 'Projeto criado com sucesso!'})
 })
 .catch(err => console.log(err))
 }

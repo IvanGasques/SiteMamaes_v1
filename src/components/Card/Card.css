@@ -1,29 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Indie+Flower&display=swap");
+
+
 .card {
   width: 17rem;
-  height: 27rem;
+  height: 29em;
   display: inline-block;
   margin: 18px 8px 0px 30px;
   padding: 6px 5px;
+  text-decoration: none;
+
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Indie Flower', cursive;
+
+
+}
+
+.card h5 {
+
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Indie Flower', cursive;
+
 }
 
 .carde {
   width: 80%;
   height: 250px;
   display: contents;
+  margin-bottom: 8px;
+  text-decoration: none;
 }
 
 .card-text {
   color: #6d6e6e;
+  text-decoration: none;
 
 }
 
+#cardy {
+  margin-top: 1.45em;
+}
+
+.button_default {
+  text-decoration: none;
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Indie Flower', cursive;
+}
 
 
 .btn-outline- {
   color: #D7D9E9;
+  text-decoration: none;
 }
 
 .card:a {
   color: #F2EADF;
+  text-decoration: none;
 
 }

@@ -5,11 +5,13 @@ import { FaTrash } from 'react-icons/fa'
 const ServiceCard = ({id, name, cost, description, handleRemove}) => {
  
 const remove =(e) => {
+  e.preventDefault()
+  handleRemove(id, cost)
 
 }
 
  return(
-    <div className='project_card'>
+    <div className='project_card' key={id}>
       <h4>{name}</h4>
       <p>
         <span>Custo Total:</span> €{cost}

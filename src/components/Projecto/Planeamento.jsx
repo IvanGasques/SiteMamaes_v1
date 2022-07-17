@@ -8,6 +8,7 @@ import { useState,useEffect } from 'react'
 const Planeamento = ({btxText, handleSubmit, projectData}) => {
 const [categories, setCategories] = useState([])
 const [project, setProject] = useState (projectData || {})
+
 useEffect (() => {
   fetch('http://localhost:5000/categories',{
   method: 'GET',

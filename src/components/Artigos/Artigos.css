@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Indie+Flower&display=swap");
+
+.artigos {
+  height: 100%;
+
+  max-width: 80%;
+  position: relative;
+  display: block;
+  justify-content: center;
+  font-size: 1.3em;
+  margin: 11% 4%;
+  font-display: center;
+  margin: 3% 10%;
+}
+
+h1,
+h2,
+h3,
+h3,
+h4,
+p {
+  font-weight: bold;
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Indie Flower', cursive;
+}

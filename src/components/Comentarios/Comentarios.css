@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Indie+Flower&display=swap");
+
+
 .foorm {
   background-color: rgba(252, 255, 255, 0.903);
   color: #F2EADF;
@@ -10,6 +13,8 @@
   display: block;
   margin: 17px auto;
   border: 1px solid #d9af8b;
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Indie Flower', cursive;
 
 
 }
@@ -17,11 +22,17 @@
 .foorm h1 {
   color: #6d6e6e;
   padding-top: -10px;
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Indie Flower', cursive;
+  font-size: 30px;
 
 }
 
 label {
   color: #6d6e6e;
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Indie Flower', cursive;
+  font-size: 22px;
 }
 
 input {
@@ -61,6 +72,7 @@ input {
   width: auto;
   transition: all 0.5s;
   cursor: pointer;
+  font-size: 15px;
 }
 
 .button_default_stroke {
@@ -88,4 +100,6 @@ input {
   border-radius: 10px;
   display: block;
   margin: 17px auto;
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Indie Flower', cursive;
 }

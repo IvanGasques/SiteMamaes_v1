@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Indie+Flower&display=swap");
+
+
+
 .btn {
 
   color: #F2EADF;
@@ -6,6 +10,9 @@
   text-decoration: none;
   transition: 0.5s;
   background-color: #d9af8b;
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Indie Flower', cursive;
+  font-size: 1.5em;
 
 }
 
