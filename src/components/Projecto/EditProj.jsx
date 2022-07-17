@@ -35,7 +35,7 @@ headers: {
   setproject(data)
   setServices(data.services)
  })
-.catch((err) => console.log(err))},800)
+.catch((err) => console.log(err))},500)
 },[id])
 
 

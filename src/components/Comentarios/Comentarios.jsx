@@ -1,40 +1,62 @@
-import React from "react";
+
 import './Comentarios.css'
-import { useState } from 'react'
+import {  useState, } from 'react'
 
 function Comentario(){
+  
+ const [name, setname] = useState ("")
+ const [post, setpost] = useState ("")
 
-function publicarComentario(e){
-  e.preventDefault()
-  setUserName(name)
-}
+ const nameChange = (e) => setname(e.target.value)
+ const postChange = (e) => setpost(e.target.value)
+ 
 
-const [name, setName] = useState()
-const [userName, setUserName] = useState()
-const [text, setText] = useState()
+
+const publicarComentario = (e) => {
+e.preventDefault();
+
+const data = {name, post} 
+
+const requestOptions = {
+method: 'POST',
+headers: {
+  'Content-Type': 'application/json',
+},
+body: JSON.stringify(data)
+ };
+ fetch ('http://localhost:5000/posts',requestOptions) 
+ .then((resp) => resp.json())
+ .then((resp) => console.log(resp))
+
+
+ }
+
+
+
+
+
   return(<div>
 
    <div className="tab"> 
-<form  className="foorm" >
+<form   className="foorm" onSubmit={publicarComentario} >
 <h1> Partilha de experiências</h1>
-     <p><label htmlFor='name'>Nome: </label>
-     <input type="text" name="name" id="name" onChange ={(e) => setName(e.target.value)}/></p>
+     <p><label htmlFor='name'>Nome: </label></p>
+     <input type="text" name="name" value={name}  onChange={nameChange} required/>
 
 
      <pre> <p>
-     <textarea id="coment" name="coment" className="mensagem" placeholder="Digite seu comentario..." onChange={(e) => setText(e.target.value)}></textarea></p></pre>
+     <input  name='content'  type='text' value={post} className="textarea" placeholder="Digite a sua experiências..." onChange={postChange} required></input></p></pre>
 
-     <p><input onClick={publicarComentario} type="submit" id="bt" value="Publicar" className="button_default button_default_stroke"/>
+     <p className="bt" >
+     <button  type="submit"  onClick={() => window.location.reload()} className="button_default button_default_stroke">Publicar</button>
+     
       </p>
      
      </form>
           </div>
-         <div className="comento">
-        {userName &&(  <div className="coment">{name}:
-          {text}
-          </div>)}</div>
+        
           </div>
   )
 }
 
-export default Comentario;
+export default Comentario

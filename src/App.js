@@ -12,13 +12,14 @@ import Home2 from './components/Projecto/Home2'
 import Projects from './components/Layout/Projects'
 import EditProj from './components/Projecto/EditProj'
 import imageUrl from './components/img/backgraund.jpg'
+import TrocaExperiencia from './components/Comentarios/TrocaExperiencia'
 
 function App() {
 
 
   return (
     
-  <div className='App' style={{ background: `url(${imageUrl})`}}>
+  <div className='App' id='appe' style={{ background: `url(${imageUrl})`}}>
   <div className='link'> <Router>
  
   <NavBar></NavBar>
@@ -29,6 +30,9 @@ function App() {
 
     <Route exact path='/'>
       <Home/>
+      </Route>
+      <Route exact path='/Partilha'>
+      <TrocaExperiencia/>
       </Route>
       <Route  path='/Projects' >
     <Projects/>
