@@ -1,9 +1,17 @@
 import './Artigos.css'
+import { Link } from 'react-router-dom'
 
 const Artigos4 = () =>{
 
   return (
-    <div> 
+    <div><div className='top'>
+      <Link className='bot' to = '/Artigos1'>Saúde</Link>
+    <Link className='bot' to = '/Artigos2'>Edu. Física</Link>
+    <Link className='bot' to = '/Artigos3'>Nutrição</Link>
+    <Link className='bot' to = '/Artigos4'>Alimentação</Link>
+    <Link className='bot' to = '/Artigos5'>Receita</Link>
+    </div>
+    <div className='artigos'> 
     <h2>Novas orientações para a alimentação complementar</h2>
 <h4>A alimentação complementar suscita sempre muitas dúvidas aos pais, deixamos neste artigo as mais recentes recomendações da ESPGHAN.</h4>
 POR   MÃE ME QUER MAG
@@ -36,7 +44,7 @@ POR   MÃE ME QUER MAG
 <p>￼De forma a evitar a exposição a arsénio inorgânico, considerado um elemento cancerígeno, as novas orientações recomendam que bebidas vegetais à base de arroz não deverão ser oferecidas a bebés nas alimentação complementar nem às crianças pequenas.</p>￼
 <p>Por último, o documento de 2017 volta a reforçar a recomendação anterior, da introdução de leite de vaca apenas após os 12 meses, devido ao reduzido teor de ferro, excesso de proteína e gordura, e também por inibir a absorção de ferro de outros alimentos. Contudo, este pode ser incluído antes, na confecção de alimentos durante a alimentação complementar. </p>￼
 
-    </div>
+    </div></div>
   )
 }
 

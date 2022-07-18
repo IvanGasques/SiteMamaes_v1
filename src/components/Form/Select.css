@@ -14,5 +14,7 @@
   padding: .7em;
   border: 1px solid #f2eadf;
   border-radius: 5px;
-  color: #dfdee4
+  color: #dfdee4;
+  height: 40px;
+  font-size: 0.72em;
 }

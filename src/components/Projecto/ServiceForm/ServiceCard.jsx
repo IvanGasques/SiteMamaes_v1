@@ -11,7 +11,7 @@ const remove =(e) => {
 }
 
  return(
-    <div className='project_card' key={id}>
+    <div className='project_card' >
       <h4>{name}</h4>
       <p>
         <span>Custo Total:</span> €{cost}

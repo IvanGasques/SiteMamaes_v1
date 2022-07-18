@@ -9,12 +9,12 @@ function NavBar() {
   return (<nav className='navBar'>
   
   <ul className='list'>
-  <li className='item'><Link to = '/'>Home</Link></li>
-  <li className='item'><Link to = '/Partilha'>Partilhas</Link></li>
-  <li className='item'><Link to ='/Artigos'>Artigos</Link></li>
-  <li className='item'><Link to = '/Project'>Projeto</Link></li>
-  <li className='item'><Link to ='/Planeamento'>Planeamento</Link></li>
-  <li className='item'><Link to ='/QuemSomos'>QuemSomos</Link></li>
+  <li className='item'><Link className='letra' to = '/'>Home</Link></li>
+  <li className='item'><Link className='letra' to = '/Partilha'>Partilhas</Link></li>
+  <li className='item'><Link className='letra' to ='/Artigos'>Artigos</Link></li>
+  <li className='item'><Link className='letra' to = '/Projects'>Projeto</Link></li>
+  <li className='item'><Link className='letra' to ='/Planeamento'>Planeamento</Link></li>
+  <li className='item'><Link className='letra' to ='/QuemSomos'>QuemSomos</Link></li>
   
       </ul>
  </nav>)

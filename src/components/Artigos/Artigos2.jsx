@@ -1,9 +1,16 @@
-
+import { Link } from 'react-router-dom'
 import './Artigos.css'
 
 const Artigos2 = () =>{
 
   return (
+    <div><div className='top'>
+      <Link className='bot' to = '/Artigos1'>Saúde</Link>
+    <Link className='bot' to = '/Artigos2'>Edu. Física</Link>
+    <Link className='bot' to = '/Artigos3'>Nutrição</Link>
+    <Link className='bot' to = '/Artigos4'>Alimentação</Link>
+    <Link className='bot' to = '/Artigos5'>Receita</Link>
+    </div>
     <div className='artigos'>
     <h2>Atividade física das crianças diminuiu 20% a nível global em contexto de pandemia</h2>
     <p>Os dados foram recolhidos a partir de pesquisas de 22 estudos de diferentes países.</p>
@@ -19,7 +26,7 @@ const Artigos2 = () =>{
     
    <p> A investigação defende que existe uma necessidade urgente de organizar iniciativas que promovam o interesse das crianças para a prática de exercício físico. Iniciativas que se devem manter após o período de pandemia.</p>
    <p>Segundo a revista Forbes, 1.5 biliões de crianças, em todo o mundo, foram afetadas pelo encerramento das escolas, ao perderem além das aulas de educação física, as atividades extra-curriculares de caráter desportivo.</p>
-     </div>
+     </div></div>
   )
 }
 

@@ -6,6 +6,7 @@ import LinkBtn from "../Form/LinkBtn"
 import CardProject from "../Projecto/CardProject/CardProject"
 import { useEffect, useState } from "react"
 import Loading from "../Projecto/Loading./Loading"
+import "../Projecto/EditProj.css"
 
 
 const Projects = ({type, start}) => {
@@ -64,10 +65,11 @@ const removeProject = (id) => {
      <h1>Meus Projetos</h1>
      <LinkBtn to='/Planeamento' text='Criar Projeto'/>
      </div>
+     <div className='edite' >
     {message && 
     <Message type='success' msg={message}/>}
     <Message type='success' msg={projectMessage}/>
-    <Container className={start}>
+    <div className='start'>
      {projects.length >0 &&
      projects.map((projects, category) =>
       <CardProject 
@@ -84,8 +86,8 @@ const removeProject = (id) => {
      {removeLoading && projects.length ===0 && (
       <p> Não hà projeto cadastrados</p>
      )}
-    </Container>
-
+    </div>
+<div></div></div>
     </div>
   )
 }

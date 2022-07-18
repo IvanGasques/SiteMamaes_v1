@@ -1,9 +1,17 @@
 import './Artigos.css'
+import { Link } from 'react-router-dom'
 
 const Artigos1 = () =>{
 
   return (
-    <div className="artigos">
+   <div><div className='top'>
+    <Link className='bot' to = '/Artigos1'>Saúde</Link>
+    <Link className='bot' to = '/Artigos2'>Edu. Física</Link>
+    <Link className='bot' to = '/Artigos3'>Nutrição</Link>
+    <Link className='bot' to = '/Artigos4'>Alimentação</Link>
+    <Link className='bot' to = '/Artigos5'>Receita</Link>
+    </div>
+<div className="artigos">
   <h2>  Bebés expostos a Covid-19 no útero têm maior risco de sofrer atrasos no desenvolvimento
 O estudo foi realizado num hospital de Boston.</h2>
 <h5>POR   JÚLIA ROCHA</h5>
@@ -23,7 +31,7 @@ O estudo foi realizado num hospital de Boston.</h2>
 
 <p>“Em muitos casos, estes são diagnósticos que se resolvem com a idade. Portanto, pode muito bem ser que, quando voltamos atrás e olhamos para estas crianças depois de 18 meses ou dois anos, elas já tenham recuperado. Mas queríamos estabelecer um método para estudar este grupo, para que, se houver problemas mais tarde, possamos detectá-los o mais cedo possível.”</p>
 
-     </div>
+     </div></div>
   )
 }
 

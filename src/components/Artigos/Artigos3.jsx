@@ -1,9 +1,16 @@
 import './Artigos.css'
+import { Link } from 'react-router-dom'
 
 const Artigos3 = () =>{
 
-  return (
-    <div>
+  return (<div><div className='top'>
+    <Link className='bot' to = '/Artigos1'>Saúde</Link>
+    <Link className='bot' to = '/Artigos2'>Edu. Física</Link>
+    <Link className='bot' to = '/Artigos3'>Nutrição</Link>
+    <Link className='bot' to = '/Artigos4'>Alimentação</Link>
+    <Link className='bot' to = '/Artigos5'>Receita</Link>
+    </div>
+    <div className='artigos'>
     <h2>Crise alimentar está a causar casos de subnutrição grave infantil a cada minuto</h2>
 <h4>A organização apela para a disponibilização de um pacote financeiro de cerca de 1,2 mil milhões de dólares.</h4>
 POR   JÚLIA ROCHA
@@ -15,7 +22,7 @@ POR   JÚLIA ROCHA
 <p>No mesmo comunicado, a organização pertencente às Nações Unidas indica que “pelo menos 10 milhões de crianças que se encontram gravemente subnutridas, ou duas em cada três, tão têm acesso ao tratamento mais eficaz, através do Alimento Terapêutico pronto a Usar”.</p>
 <p>Este alimento consiste numa pasta à base de amendoim enriquecida com nutrientes. O aumento de preço deste alimento pode vir a significar que mais de 600 mil crianças fiquem sem acesso a este tratamento.</p>
 <p>A UNICEF Portugal juntou-se ao apelo de sensibilização e angariação de fundos, que permitam o acompanhamento das crianças mais afetadas. A organização apela para a disponibilização de um pacote financeiro de cerca de 1,2 mil milhões de dólares para aplicar em “serviços e cuidados de nutrição essenciais para evitar milhões de mortes infantis”, devido à subnutrição.</p>
-
+</div>
      </div>
   )
 }

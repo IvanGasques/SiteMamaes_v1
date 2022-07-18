@@ -1,10 +1,10 @@
 import React from "react";
-import Image2 from './imagens/Image2.jpg'
-import Image1 from './imagens/Image1.jpg'
-import Image3 from './imagens/Image3.jpg'
-import Image4 from './imagens/Image4.jpg'
-import Image5 from './imagens/Image5.jpg'
-import Image6 from './imagens/Image6.jpg'
+import Image2 from './imagens/Image7.jpeg'
+import Image1 from './imagens/Image1.jpeg'
+import Image3 from './imagens/Image3.jpeg'
+import Image4 from './imagens/Image4.jpeg'
+import Image5 from './imagens/Image5.jpeg'
+import Image6 from './imagens/Image6.jpeg'
 
 
 import './Carrosel.css'
@@ -18,7 +18,7 @@ function Carrosel() {
     <div id="carouselExampleFade" className="carousel slide carousel-fade" data-bs-ride="carousel">
   <div className="carousel-inner">
     <div className="carousel-item active">
-      <img src={Image2} className="d-block w-80" alt="..."/>
+      <img src={Image2} className="d-block w-80"  alt="..."/>
     </div>
     <div className="carousel-item">
       <img src={Image3}  className="d-block w-80" alt="..."/>

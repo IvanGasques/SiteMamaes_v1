@@ -1,6 +1,15 @@
+import './Artigos.css'
+import { Link } from 'react-router-dom'
 const Artigos5 = () =>{
 
   return (
+    <div><div className='top'>
+    <Link className='bot' to = '/Artigos1'>Saúde</Link>
+    <Link className='bot' to = '/Artigos2'>Edu. Física</Link>
+    <Link className='bot' to = '/Artigos3'>Nutrição</Link>
+    <Link className='bot' to = '/Artigos4'>Alimentação</Link>
+    <Link className='bot' to = '/Artigos5'>Receita</Link>
+    </div>
     <div className="artigos">
    <h1> Gelados Fáceis e Saudáveis By A Pitada do Pai</h1>
 <h5>Publicado às 15:16h em Blogue por Bebé da Mamã</h5>
@@ -31,7 +40,7 @@ PREPARAÇÃO</p>
 <p>3. coloque num tabuleiro, com papel vegetal, e leve ao congelador até obter a consistência desejada.
 Mais receitas veja aqui</p>.
 <p>BOAS RECEITAS! </p>
-    </div>
+    </div></div>
   )
 }
 

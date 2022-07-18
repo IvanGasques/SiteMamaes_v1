@@ -1,23 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Indie+Flower&display=swap");
+
 .navBar {
   display: flex;
   justify-content: space-between;
   background-color: #BF7256;
   flex-direction: row-reverse;
 
+
 }
 
+
+
+
+
 .list {
+
   display: flex;
   list-style: none;
   align-items: center;
   padding: 13px 0 0 0;
+
+}
+
+.letra {
+
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Indie Flower', cursive;
+
 }
 
 .item {
-  margin-right: 2em;
-
-
+  margin-right: 1.2em;
+  font-size: 1.1em;
 }
+
 
 .item a {
   color: #F2EADF;

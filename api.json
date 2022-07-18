@@ -97,12 +97,50 @@
       "mamaes": 0,
       "services": [],
       "id": 12
+    },
+    {
+      "name": "teste",
+      "budget": "123",
+      "category": {
+        "id": "1",
+        "name": "Roupas e acessorios"
+      },
+      "mamaes": 0,
+      "services": [],
+      "id": 13
+    },
+    {
+      "name": "Ivan",
+      "budget": "123",
+      "category": {
+        "id": "1",
+        "name": "Roupas e acessorios"
+      },
+      "mamaes": 0,
+      "services": [],
+      "id": 14
     }
   ],
   "categories": [
     {
       "id": 1,
       "name": "Roupas e acessorios"
+    },
+    {
+      "id": 1,
+      "name": "Necessidade da Mamã"
+    },
+    {
+      "id": 1,
+      "name": "Necessidade do Bebé"
+    },
+    {
+      "id": 1,
+      "name": "Utencílios"
+    },
+    {
+      "id": 1,
+      "name": "Saúde"
     }
   ],
   "posts": [
@@ -140,11 +178,6 @@
       "name": "Joana Amadeu",
       "post": "Desde que soube da minha gravidez, passei a fazer parte de vários grupos de mães onde pude construir diversas amizades e desmistificar muitos medos que a maternidade nos traz.",
       "id": 13
-    },
-    {
-      "name": "asdfg",
-      "post": "vfdgbfh",
-      "id": 14
     }
   ]
 }

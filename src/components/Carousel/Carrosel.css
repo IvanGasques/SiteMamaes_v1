@@ -2,20 +2,30 @@ img {
   border-radius: 8px 8px;
   display: block;
   margin: 8px auto 0px;
+}
 
+.carousel-item img {
+  width: 50%;
+  margin: auto 25%;
+  height: 360px;
+  margin-bottom: 32px;
+}
+
+.carousel-item {
+  width: 1200px;
 }
 
 main {
   padding: 0%;
   margin: 5%;
   display: block;
-  min-height: 100vh;
-  min-width: 100vh;
+  min-height: auto;
+  min-width: 100%;
 }
 
 .comment-section {
   max-height: 25vh;
-  max-width: 90%;
+  max-width: 100%;
   background-color: #3f3f3f;
   overflow-y: scroll;
 }

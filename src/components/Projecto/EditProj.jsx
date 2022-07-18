@@ -94,30 +94,7 @@ fetch(`http://localhost:5000/projects/${project.id}`, {
 ///////////////////////////////////////////////////////////
 
 
-const editProj = (project) =>{
-  setMessage('')
-  if (project.budget <  project.services.cost){
-    setMessage('O orçamento não pode ser menor que o custo do projeto')
-    setType('error')
-    return false
-  }
-  fetch (`http://localhost:5000/projects/${project.id}`,{
-    method:'PATCH',
-    headers:{
-      'Content-Type' : 'application/json',
-    },
-    body: JSON.stringify(project),
-  })
-  .then((resp => resp.json()))
-  .then((data) => {
-    setproject(data)
-    setShowService(false)
-    setMessage('Projeto atualizado!')
-    setType('success')
-   
-  })
-  .catch(err=> console.log(err))
-}
+
 ///////////////////////////////////////////////////////////
 
 const serviceRemove= ({id, cost}) => {
@@ -146,6 +123,11 @@ const serviceRemove= ({id, cost}) => {
   
 }
 
+
+
+
+
+const editProj= ()=>{}
 ////////////////////////////////////////////////////////////
   return (<div>
     <div className='edite'>
@@ -202,7 +184,7 @@ projectData={project}/> : false
     description= {service.description}
     key= {service.id}
     handleRemove= {serviceRemove} />))}
-    {services.length === 0 && <p>Não hà serviços cadastrados.</p>}
+    {services.name === 0 && <p>'Não hà serviços cadastrados.'</p>}
  
   </div>
 

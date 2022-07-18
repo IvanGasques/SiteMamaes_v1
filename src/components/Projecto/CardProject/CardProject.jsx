@@ -11,12 +11,12 @@ const remove = (e) => {
 }
 
 
-  return(<div className='project_card'>
-   <h4>{name}</h4>
+  return(<div className='project_card' >
+   <h4><p>{name}</p></h4>
    <p>
    <span className='pa' >Orcamento: </span> €{budget}</p>
    <p>
-    <span></span><li>{category}</li>
+    <span></span><li className='li'>{category}</li>
    </p>
    <div className='card_actions'>
     <Link to= {`/project/${id}`}><FaPencilAlt className='icon'/> Editar</Link>
